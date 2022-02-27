@@ -1,0 +1,136 @@
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-form__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 140%;
+  margin-bottom: 48px;
+}
+
+.form {
+  margin: 0 auto;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 128px;
+  width: 100%;
+}
+
+.form__general,
+.form__adress {
+  display: flex;
+  gap: 12%;
+
+  padding-top: 35px;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.form__general h3,
+.form__adress h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+
+  width: 20%;
+}
+
+.label-wrapper {
+  max-width: 460px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.label-wrapper__state {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-state {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+
+  margin-bottom: 8px;
+  padding-top: 5px;
+
+  color: #1d1d1d;
+}
+
+.input,
+.select,
+.textarea {
+  padding: 10px 8px;
+  margin-bottom: 24px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+
+  color: #a9a9a9;
+  background: #ffffff;
+
+  border: 1px solid #f5f5f5;
+  border-radius: 4px;
+}
+
+.input:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+
+.input::placeholder {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #a9a9a9;
+}
+
+.form__button {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.form__button-disabled {
+  background-color: #eeeeee;
+  color: #b4b4b4;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.button {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+
+  background-color: white;
+  color: #0652ff;
+  padding: 8px 30px;
+
+  border: 1px solid #0652ff;
+  border-radius: 18px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+}

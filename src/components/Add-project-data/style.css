@@ -1,0 +1,136 @@
+.state-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-state {
+  display: flex;
+
+  width: 68%;
+  background: #f5f5f5;
+  border-radius: 16px;
+  height: 32px;
+
+  margin-top: 8px;
+}
+
+.add-state__item {
+  width: 36%;
+
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+
+  display: flex;
+  align-items: center;
+
+  color: #a9a9a9;
+
+  margin-right: -32px;
+
+  gap: 8px;
+
+  border-radius: 18px;
+}
+
+.add-state__item--active {
+  color: white;
+  background-color: #0652ff;
+}
+
+.add-state__number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #a9a9a9;
+
+  background: #f5f5f5;
+
+  justify-content: center;
+  display: flex;
+
+  align-items: center;
+}
+
+.add-state__number--active {
+  color: #0652ff;
+}
+
+.label-wrapper__inch {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.label-inch {
+  width: 33%;
+}
+
+.input__inch {
+  display: flex;
+
+  width: 100%;
+
+  padding: 10px 8px;
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #a9a9a9;
+  background: #ffffff;
+  border: 1px solid #f5f5f5;
+  border-radius: 4px;
+}
+
+.input__inch:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+
+.input__inch::placeholder {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #a9a9a9;
+}
+
+.power-supply__list {
+  display: flex;
+
+  background: #e6eeff;
+
+  border-radius: 5px;
+
+  margin-bottom: 24px;
+}
+
+.power-supply__item {
+  width: 100%;
+}
+
+.power-supply__item label {
+  display: flex;
+
+  background: #e6eeff;
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  padding: 12px 1px;
+
+  justify-content: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked ~ * {
+  background-color: #0652ff;
+  color: white;
+}

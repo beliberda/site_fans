@@ -1,0 +1,36 @@
+.add {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #0652ff;
+    border-radius: 16px;
+
+    margin-bottom: 20px;
+}
+
+.add p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #0652ff;
+}
+
+.add_button {
+    border: 1px solid #0652ff;
+    border-radius: 18px;
+
+    margin: 24px;
+    padding: 8px 10px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #0652ff;
+    background: none;
+}
