@@ -1,6 +1,13 @@
 .main-form__title {
   display: flex;
-  gap:14px;
+  gap: 20px;
+}
+.back__button {
+  border: none;
+  max-width: 14px;
+  padding: 0;
+  max-height: 22px;
+  align-self: center;
 }
 .info_panel {
   display: flex;
@@ -185,5 +192,5 @@
   color: #ffffff;
   width: 108px;
   height: 32px;
-  border: none ;
+  border: none;
 }

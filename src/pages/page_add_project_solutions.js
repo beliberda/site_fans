@@ -4,7 +4,7 @@ import AddProjectSolutions from '../components/Add-project-solutions';
 import Header from '../components/Header';
 
 
-export default function PageAddProjectData() {
+export default function PageAddProjectSolution() {
     return (
         <React.Fragment>
             <Header />

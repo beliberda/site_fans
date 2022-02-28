@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-
+import { Link } from 'react-router-dom';
 import Item from "../../assets/img/item.png";
 import Graph from "../../assets/img/graph.png";
 import IconSize from "../../assets/img/Icon-size.svg";
@@ -20,20 +20,24 @@ export default function AddProjectSpecification() {
         <form onSubmit={handleClick} className="form" action="#">
           <div className="state-wrapper">
             
-            <h2 className="main-form__title"><img src={ArrowLeft} alt="" />Spec #0001</h2>
+            <h2 className="main-form__title"><Link to="/add_project_solutions" className="button back__button"
+                      type="submit">
+                      <img className="main-form__arrow" src={ArrowLeft} alt="" />
+                    </Link>Spec #0001</h2>
+            
             <section className="add-state">
               <span className="add-state__item add-state__data">
                 <div className="add-state__number">1</div>
                 Data input
               </span>
-              <span className="add-state__item add-state__item--active add-state__solutions">
-                <div className="add-state__number add-state__number--active">
+              <span className="add-state__item add-state__solutions">
+                <div className="add-state__number">
                   2
                 </div>
                 Generated solutions
               </span>
-              <span className="add-state__item add-state__specification">
-                <div className="add-state__number">3</div> Choosen specification
+              <span className="add-state__item add-state__item--active add-state__specification">
+                <div className="add-state__number add-state__number--active">3</div> Choosen specification
               </span>
             </section>
           </div>
@@ -90,7 +94,7 @@ export default function AddProjectSpecification() {
                 </div>
               </div>
               <div className="left__solution">
-                <div className="left__title">Perfomance chart</div>
+                <div className="left__title">Solution render</div>
                 <div className="solution__render">
                   <img
                     className="solution__render__button"

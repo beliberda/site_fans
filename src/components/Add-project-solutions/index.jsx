@@ -1,9 +1,12 @@
 import React from "react";
 import "./style.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import Foto1 from "../../assets/img/foto1.jpg";
 import Graph from "../../assets/img/graph.png";
+import Ellipsis from "../../assets/img/ellipsis.svg";
+import ArrowLeft from "../../assets/img/ArrowLeft.svg";
+import question from "../../assets/img/Info.svg";
 
 export default function AddProjectSolutions() {
   const handleClick = () => {
@@ -15,7 +18,16 @@ export default function AddProjectSolutions() {
       <div className="main-wrapper container">
         <form onSubmit={handleClick} className="form" action="#">
           <div className="state-wrapper">
-            <h2 className="main-form__title">Project creation</h2>
+            <h2 className="main-form__title">
+              <Link
+                to="/add_project_data"
+                className="button back__button"
+                type="submit"
+              >
+                <img className="main-form__arrow" src={ArrowLeft} alt="" />
+              </Link>
+              Project creation
+            </h2>
             <section className="add-state">
               <span className="add-state__item add-state__data">
                 <div className="add-state__number">1</div>
@@ -73,17 +85,17 @@ export default function AddProjectSolutions() {
                   <div className="button-wrapper button-wrapper__solutions">
                     <Link
                       to="/add_project_specification"
-                      className="button form__button"
+                      className="button form__button select_button"
                       type="submit"
                     >
                       Select
                     </Link>
-                   
+
                     <button
                       className="button form__button more__button"
                       type="submit"
                     >
-                      :
+                      <img src={Ellipsis} alt="" />
                     </button>
                   </div>
                 </div>
@@ -112,35 +124,38 @@ export default function AddProjectSolutions() {
                           12 000
                         </li>
                         <li className="system-parameters__item">
-                          <span>Airflow:</span>
-                          12 000
+                          <span>Static pressure:</span>
+                          4,5 w.g.
                         </li>
                         <li className="system-parameters__item">
-                          <span>Airflow:</span>
-                          12 000
+                          <span>Power supply:</span>
+                          208V / 3PH
                         </li>
                         <li className="system-parameters__item">
-                          <span>Airflow:</span>
-                          12 000
+                          <span>Control:</span>
+                          <p>
+                            Manual
+                            <img className="system-parameters__manual" src={question} alt="" />
+                          </p>
                         </li>
                       </ul>
 
                       <ul className="system-parameters__list">
                         <li className="system-parameters__item">
-                          <span>Airflow:</span>
+                          <span>Fan size:</span>
+                          315 mm
+                        </li>
+                        <li className="system-parameters__item">
+                          <span>Width:</span>
                           12 000
                         </li>
                         <li className="system-parameters__item">
-                          <span>Airflow:</span>
-                          12 000
+                          <span>Height:</span>
+                          52”
                         </li>
                         <li className="system-parameters__item">
-                          <span>Airflow:</span>
-                          12 000
-                        </li>
-                        <li className="system-parameters__item">
-                          <span>Airflow:</span>
-                          12 000
+                          <span>Depth:</span>
+                          36”
                         </li>
                       </ul>
                     </div>
@@ -157,14 +172,19 @@ export default function AddProjectSolutions() {
                   <span className="solutions__actions">Actions: </span>
 
                   <div className="button-wrapper button-wrapper__solutions">
-                    <button className="button form__button" type="submit">
+                    <Link
+                      to="/add_project_specification"
+                      className="button form__button select_button"
+                      type="submit"
+                    >
                       Select
-                    </button>
+                    </Link>
+
                     <button
                       className="button form__button more__button"
                       type="submit"
                     >
-                      :
+                      <img src={Ellipsis} alt="" />
                     </button>
                   </div>
                 </div>
@@ -193,35 +213,38 @@ export default function AddProjectSolutions() {
                           12 000
                         </li>
                         <li className="system-parameters__item">
-                          <span>Airflow:</span>
-                          12 000
+                          <span>Static pressure:</span>
+                          4,5 w.g.
                         </li>
                         <li className="system-parameters__item">
-                          <span>Airflow:</span>
-                          12 000
+                          <span>Power supply:</span>
+                          208V / 3PH
                         </li>
                         <li className="system-parameters__item">
-                          <span>Airflow:</span>
-                          12 000
+                          <span>Control:</span>
+                          <p>
+                            Manual
+                            <img className="system-parameters__manual" src={question} alt="" />
+                          </p>
                         </li>
                       </ul>
 
                       <ul className="system-parameters__list">
                         <li className="system-parameters__item">
-                          <span>Airflow:</span>
+                          <span>Fan size:</span>
+                          315 mm
+                        </li>
+                        <li className="system-parameters__item">
+                          <span>Width:</span>
                           12 000
                         </li>
                         <li className="system-parameters__item">
-                          <span>Airflow:</span>
-                          12 000
+                          <span>Height:</span>
+                          52”
                         </li>
                         <li className="system-parameters__item">
-                          <span>Airflow:</span>
-                          12 000
-                        </li>
-                        <li className="system-parameters__item">
-                          <span>Airflow:</span>
-                          12 000
+                          <span>Depth:</span>
+                          36”
                         </li>
                       </ul>
                     </div>

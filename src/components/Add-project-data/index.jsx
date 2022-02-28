@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
+import ArrowLeft from "../../assets/img/ArrowLeft.svg";
 
 export default function AddProjectData() {
   const handleClick = () => {
@@ -12,7 +13,10 @@ export default function AddProjectData() {
       <div className='main-wrapper container'>
         <form onSubmit={handleClick} className='form' action='#'>
           <div className='state-wrapper'>
-            <h2 className='main-form__title'>Project creation</h2>
+          <h2 className="main-form__title"><Link to="/reg" className="button back__button"
+                      type="submit">
+                      <img className="main-form__arrow" src={ArrowLeft} alt="" />
+                    </Link>Project creation</h2>
             <section className='add-state'>
               <span className='add-state__item add-state__item--active add-state__data'>
                 <div className='add-state__number add-state__number--active'>

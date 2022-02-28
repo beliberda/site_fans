@@ -191,3 +191,18 @@
   font-size: 20px;
   line-height: 120%;
 }
+.select_button {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 108px;
+  height: 32px;
+}
+.more__button {
+  width: 32px;
+  height: 32px;
+}
+.system-parameters__manual {
+  margin-left: 4px;
+}
